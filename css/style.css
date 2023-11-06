@@ -150,7 +150,7 @@ main div {
     }
   
     nav ul li {
-      display: block;
+      display: inline;
       margin: 10px 0;
     }
   
