@@ -165,6 +165,7 @@ main div {
     main {
       max-width: 90%; 
     }
+  
     .img-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -178,7 +179,6 @@ main div {
         font-size: 10px;
         text-align: center;
     }
-  
     .recipe {
       grid-template-columns: repeat(1, 1fr); 
     }
