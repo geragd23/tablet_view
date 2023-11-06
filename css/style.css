@@ -1,0 +1,195 @@
+h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    color:white;
+}
+
+body {
+    background-color: #333;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* nav{
+    height:100px;
+} */
+nav ul {
+    list-style: none;
+    background-color: rgb(79, 79, 79);
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 20px 20px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #313030; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+img {
+    /* max-width: 100%; */
+    /* height: auto; */
+    display: block;
+    margin: 10px auto;
+}
+.img-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 0px; /* Adjust the gap between images as needed */
+}
+.img-grid img {
+    /* max-width: 100%; */
+    /* height: auto; */
+    display: block;
+}
+.img-grid p{
+    font-size: 15px;
+    text-align: center;
+}
+
+.recipe {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 equal columns */
+    grid-gap: 0px; /* Adjust the gap between grid items as needed */
+}
+
+.recipe img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.recipe h2 {
+    grid-column: span 2; 
+}
+p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+ h2, h3 {
+     margin: 20px 0; 
+     text-align: center;
+} 
+
+ul {
+    list-style: disc;
+    /* margin-left: 20px; */
+}
+
+main div {
+    border: 1px solid #8c8989;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: top 0.3s;
+}
+
+.skip-link:focus, .skip-link:active {
+    top: 0; 
+}
+
+@media (max-width: 767px) {
+    nav ul {
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .thumbnail {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .img-grid {
+        grid-template-columns: 1fr;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    nav ul {
+      padding: 10px 0; 
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    nav ul li a:hover {
+        background-color: #313030; /* Change background color on hover */
+        color: #fff; /* Change text color on hover */
+    }
+    h1 {
+      margin: 10px 0; 
+    }
+  
+    main {
+      max-width: 90%; 
+    }
+  
+    .img-grid {
+      grid-template-columns: repeat(1, 1fr); 
+      gap: 10px; 
+    }
+  
+    .img-grid p {
+      font-size: 14px; 
+    }
+  
+    .recipe {
+      grid-template-columns: repeat(1, 1fr); 
+    }
+  
+    .recipe h2 {
+      grid-column: span 1; 
+    }
+  
+    ul {
+      list-style: disc;
+      margin-left: 20px; 
+    }
+  
+    main div {
+      padding: 10px; 
+      margin: 10px 0; 
+    }
+  }
