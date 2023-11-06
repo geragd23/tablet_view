@@ -165,14 +165,18 @@ main div {
     main {
       max-width: 90%; 
     }
-  
     .img-grid {
-      grid-template-columns: repeat(1, 1fr); 
-      gap: 10px; 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0px; 
     }
-  
-    .img-grid p {
-      font-size: 14px; 
+    .img-grid img {
+
+        display: block;
+    }
+    .img-grid p{
+        font-size: 10px;
+        text-align: center;
     }
   
     .recipe {
